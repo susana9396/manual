@@ -9,3 +9,5 @@ cd carpeta: entra en la carpeta
 rm: borra un archivo
 
 rm-rf carpeta: 
+
+gcgfcgvgvg
