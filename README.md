@@ -30,6 +30,7 @@ git status //verificar el estado de nuestro repositorio
 git add lala.txt //busca el archivo (si fuese . buscaria todos los archivos)
 
   //Ejemplo 1
+  
   $ git status
   On branch master 
 
@@ -47,6 +48,7 @@ git add lala.txt //busca el archivo (si fuese . buscaria todos los archivos)
 
 
   //Ejemplo 2
+  
   $ git commit -m "primer commit"
 
   *** Please tell me who you are.
@@ -71,6 +73,7 @@ git add lala.txt //busca el archivo (si fuese . buscaria todos los archivos)
 git commit // ahora el archivo lala.txt pasa de stageing al repositorio 
 
   // Ejemplo 3
+  
   $ git log
   commit fea3f370863e681efe9de680d1172bf9bce8999e (HEAD -> master) // codigo que aparece es la clave del cambio que realicé se ve con     git show
   Author: SL <susanavlr@live.cl>
