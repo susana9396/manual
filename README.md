@@ -84,7 +84,7 @@ git commit // ahora el archivo lala.txt pasa de stageing al repositorio
 
 git diff /// muestra las diferencias 
 
-git check out //// actualiza las modificaciones 
+git checkout //// actualiza las modificaciones 
 
 
 git remote show origin
@@ -98,4 +98,4 @@ git fetch  // actualiza el repostorio local
 git pull origin master  // actualiza directorio
 
 
-$ git remote rm origin /// remueve url de gitcd
+ git remote rm origin /// remueve url de gitcd
