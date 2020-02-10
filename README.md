@@ -1,4 +1,4 @@
-# manual
+# Manual
 
 pwd : indica cual es la carpeta actual donde estoy.
 
