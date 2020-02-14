@@ -25,7 +25,7 @@ touch   lala.txt : crear un archivo "lala.txt"
 
 git status :verificar el estado de nuestro repositorio
 
-* $ es el intermediario que recibe los comando
+* $ es el intermediario que recibe los comandos
 
 git add lala.txt : busca el archivo (si fuese . buscaria todos los archivos)
 
@@ -44,9 +44,33 @@ git fetch  : actualiza el repostorio local
 git pull origin master  : actualiza directorio
 
 git remote rm origin : remueve url de gitcd
+
+-------------------------------------------------------------------------
+  //Procedimiento 1: Entrar a un reposotorio git
+
+  git clone https://github.com/susana9396/manual.git //En el ejemplo ingreso al repositorio manual
+
+  cd .. //salgo de la carpeta
+
+  cd manual // ingreso a la carpeta manual
  
 -------------------------------------------------------------------------
-  //Ejemplo 1
+  //Procedimiento 2: Subir un archivo a un repositorio git
+
+  cd manual // Ingreso al repositorio en que quiero cargar archivo
+
+  touch "archivo.txt" // Creo Archivo 
+
+  git add archivo.txt // busco el archivo
+
+  git commit -m "Comentario" // Envío archivo al área de preparación
+
+  git status // verifico que el archivo esté en verde
+
+  git push origin master // Subo archivo al repositorio manual
+
+-------------------------------------------------------------------------
+  //Ejemplo 1: Para verificar el estado de una actualización del archivo.
   
   $ git status
   On branch master 
@@ -64,7 +88,7 @@ git remote rm origin : remueve url de gitcd
           lolo.txt (rojo)
 
 -------------------------------------------------------------------------
-  //Ejemplo 2
+  //Ejemplo 2: Antes de hacer commit a un archivo se debe configurar usuario y correo
   
   $ git commit -m "primer commit"
 
@@ -87,10 +111,13 @@ git remote rm origin : remueve url de gitcd
   git config --global user.name "SL"
 
 -------------------------------------------------------------------------
- // Ejemplo 3
+ // Ejemplo 3: Al hacer un cambio se puede ver el código de esta modificación
   
   $ git log
-  commit fea3f370863e681efe9de680d1172bf9bce8999e (HEAD -> master) // codigo que aparece es la clave del cambio que realicé se ve con     git show
+  commit fea3f370863e681efe9de680d1172bf9bce8999e (HEAD -> master) 
+
+  * codigo que aparece es la clave del cambio que realicé se ve con  git show
+
   Author: SL <susanavlr@live.cl>
   Date:   Fri Feb 7 19:57:40 2020 -0300
 
