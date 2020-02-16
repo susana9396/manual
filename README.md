@@ -13,37 +13,41 @@ rm-rf carpeta: borrar una carpeta y todo su contenido
 code . : abre visual studio
 
 ---------------------------------------------------------------
+$ es el intermediario que recibe los comandos
+
 cd ~ // 
 
-mkdir susana2 :creo un directorio
+mkdir susana2 : Creo un directorio
 
-cd susana2 : ingreso a mi directorio
+cd susana2 : Ingreso a mi directorio
 
-git init : inicializa un repositorio, se creará una carpeta llamada .git
+ls: Lista archivo
 
-touch   lala.txt : crear un archivo "lala.txt"
+git init : Inicializa un repositorio, se creará una carpeta llamada .git
 
-git status :verificar el estado de nuestro repositorio
+touch   lala.txt : Crear un archivo "lala.txt"
 
-* $ es el intermediario que recibe los comandos
+git status : Verificar el estado de nuestro repositorio
 
-git add lala.txt : busca el archivo (si fuese . buscaria todos los archivos)
+git add lala.txt : Busca el archivo (si fuese . buscaria todos los archivos) y  agrega todos los archivos nuevos en preparación (staging)
 
-git commit : ahora el archivo lala.txt pasa de stageing al repositorio 
+git commit : Realiza los cambios 
 
-git diff : muestra las diferencias 
+git diff : Muestra las diferencias 
 
-git checkout : actualiza las modificaciones 
+git checkout : Actualiza las modificaciones 
 
-git remote show origin : 
+git remote show origin : Indica a cuál rama enviarás información automáticamente cada vez que ejecutas git push
 
-git push origin master : empuja el repositorio 
+git push origin master : Empuja el repositorio / lleva los últimos cambios a github
 
-git fetch  : actualiza el repostorio local
+git fetch  : Actualiza el repostorio local
 
-git pull origin master  : actualiza directorio
+git pull origin master  : Actualiza directorio
 
-git remote rm origin : remueve url de gitcd
+git remote rm origin : Remueve url de gitcd
+
+git clone : Clona un repositorio de github a tu directorio de trabajo local
 
 -------------------------------------------------------------------------
   //Procedimiento 1: Entrar a un reposotorio git
@@ -79,13 +83,13 @@ git remote rm origin : remueve url de gitcd
 
   Changes to be committed:
     (use "git rm --cached <file>..." to unstage)
-          new file:   lala.txt *(verde indica que esta area stageing(area de preparación)
+      new file:   lala.txt 
+      
+  * verde indica que esta area staging(area de preparación)
   
-    *tomo el archivo de mi directory a esta zona
-
   Untracked files:
    (use "git add <file>..." to include in what will be committed)
-          lolo.txt (rojo)
+      lolo.txt (rojo)
 
 -------------------------------------------------------------------------
   //Ejemplo 2: Antes de hacer commit a un archivo se debe configurar usuario y correo
@@ -105,7 +109,6 @@ git remote rm origin : remueve url de gitcd
   fatal: unable to auto-detect email address (got 'alumnos@MININT-ECUT0NC.(none)')
 
   * debemos configurar, se agrega correo y nombre
-
 
   git config --global user.email "susanavlr@live.cl"
   git config --global user.name "SL"
