@@ -45,7 +45,7 @@ git fetch  : Actualiza el repostorio local
 
 git pull origin master  : Actualiza directorio
 
-git remote rm origin : Remueve url de gitcd
+git remote rm origin : Remueve url de github
 
 git clone : Clona un repositorio de github a tu directorio de trabajo local
 
